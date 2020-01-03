@@ -2,13 +2,46 @@
 <html lang="en">
 <meta name="viewport" content="width=device-width, inital-scale=1">
 <style>
+.parallax {
+    /* image used */
+    background-image: url("test.jpg"); 
 
+    /* set height */
+    min-height: 969px;
+
+    /* Create effect*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.centered {
+    font-size: 25px;
+    text-decoration: underline;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+}
+
+.subcentered {
+    font-size: 15px;
+    position: absolute; 
+    top: 60%;
+    left: 53.5%;
+
+}
 </style>
 
 <body>
-<div class="intro">
-    <img src="test.jpg" style="width:100%;">
-    <div class="icentered">Nicholas Perri</div>
+<div class="parallax">
+    <div class="centered">
+        <h1>Nicholas Perri</h1>
+    </div>
+    <div class="subcentered">
+        <h2>Interactive Resume</h2>
+    </div>
+
 </div>
 </body>
 </html>
