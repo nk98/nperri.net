@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
 body, html {
@@ -29,7 +30,7 @@ body, html {
     width: auto; 
 }
 
-.centered {
+.fcentered {
     font-size: 25px;
     color: white;
     border-radius: 1em;
@@ -89,18 +90,23 @@ body, html {
 }
 
 /* Remaining body of works */
+.title {
 
+}
 /* Contact */ 
 .contact {
-    background-color: grey;
+    font-size: 40px;
+    background-color: black;
+    padding: 200px;
 }
+
 
 </style>
 </head>
 <body>
 
 <div class="bg">
-    <div class="centered">
+    <div class="fcentered">
         <h1>Nicholas Perri</h1>
     </div>
     <div class="container">
@@ -113,7 +119,7 @@ body, html {
 
 <div class="navbar"></div>
 <div class="profile">
-    <h3><a id="Profile">Profile</a></h3>
+    <h3 class="title"><a id="Profile">Profile</a></h3>
     <p>alsdkjfa;lksdjf;alskjdfalsdkjfa;lksdjf;alskjdfals</p>
     <p>alsdkjfa;lksdjf;alskjdfalsdkjfa;lksdjf;alskjdfals</p>
     <p>alsdkjfa;lksdjf;alskjdfalsdkjfa;lksdjf;alskjdfals</p>
@@ -143,20 +149,20 @@ body, html {
 </div>
 
 <div class="exp">
-    <h4><a id="Experiences">Experiences</a></h4>
+    <h4 class="title"><a id="Experiences">Experiences</a></h4>
 </div>
 
 <div class="skill">
-    <h5><a id="Skills">Skills</a></h5>
+    <h5 class="title"><a id="Skills">Skills</a></h5>
 </div>
 
 <div class="project">
-    <h6><a id="Projects">Projects</a></h6>
+    <h6 class="title"><a id="Projects">Projects</a></h6>
 </div>
 
-<div class="contact">
-    <h7><a id="Contact">Contact</a></h7>
-</div>
+<footer class="contact format">
+    <a href="https://www.linkedin.com/in/nicholas-perri/"><i class ="fa fa-linkedin-square"></i></a>
+</footer>
 
 <div id="sidenav" class="navbar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeN()">&times;</a>
