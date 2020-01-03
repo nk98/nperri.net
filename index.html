@@ -1,26 +1,63 @@
 <!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<html lang="en">
+<meta name="viewport" content="width=device-width, inital-scale=1">
 <style>
-body, html {
-    height: 100%;
-    margin: 0;
-}
+.parallax {
+    /* image used */
+    background-image: url("test.jpg"); 
 
-.bg {
-    background-image: url("summer.jpg");
-    height: 100%; 
+    /* set height */
+    min-height: 969px;
 
+    /* Create effect*/
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.centered {
+    font-size: 25px;
+    text-decoration: underline;
+    color: black;
+    border-radius: 1em;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    
+}
+
+.subcentered {
+    font-size: 15px;
+    color: black;
+    border-radius: 1em;
+    padding: 1em;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    
+
+}
+
+.profile {
+    text-align: center;
+}
 </style>
 
 <body>
-<div class="bg"></div>
+<div class="parallax">
+    <div class="centered">
+        <h1>Nicholas Perri</h1>
+    </div>
+    <div class="subcentered">
+        <h2>Interactive Resume</h2>
+    </div>
+</div>
 
 <div class="profile">
     <h3>Profile</h3>
