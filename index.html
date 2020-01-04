@@ -12,9 +12,12 @@
 * {
     box-sizing: border-box;
 }
+
 body, html {
     height: 100%;
     margin: 0;
+    line-height: 1.65;
+    font-size: 15px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -35,6 +38,10 @@ body, html {
     position: absolute;
     margin: 20px; 
     width: auto; 
+}
+
+.center {
+    text-align: center;
 }
 
 /* Center font with background image */ 
@@ -89,16 +96,16 @@ body, html {
     padding: 16px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (min-width: 990px) {
     .navbar {padding-top: 115px;}
     .navbar a {font-size: 18px;}
+    .column {float: left;}
 }
 
 /* END OF NAVBAR: Remaining body of works */
 
 /* Title headers for sections */ 
 .title {
-    text-align: center;
     font-size: 54px;
     color: black;
     margin-bottom: 20px;
@@ -106,13 +113,19 @@ body, html {
 }
 
 .subtitle {
-    text-align: center;
     font-size: 28px;
     font-weight: 300;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: rgb(59, 59, 59);
 }
 
+.exp-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+
+}
 p {
     margin: 0 0 10px;
     display: block; 
@@ -122,18 +135,23 @@ p {
     margin-inline-end: 0px;
 }
 .p1 {
-    text-align: center;
     font-size: 16px;
     font-weight: 300;
     color: grey;
 
 }
 .column {
-    float: left; 
     width: 50%;
-    padding: 10px;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
+.row {
+    margin-right: -15px;
+    margin-left:-15px;
+}
 /* clears floats after column*/
 .row:after {
     content: "";
@@ -141,9 +159,6 @@ p {
     clear: both; 
 }
 
-.exp {
-    background-color: white;
-}
 
 /* Contact */ 
 .contact {
@@ -151,7 +166,6 @@ p {
     background-color: black;
     padding-top: 80px;
     padding-bottom: 80px;
-    text-align: center;
 }
 
 
@@ -176,19 +190,19 @@ p {
 
 <!-- Profile Section-->
 <div class="profile">
-    <h3 class="title"><a id="Profile">Profile</a></h3>
-    <p class="p1">Current Student at Rochester Institute of Technology</p>
+    <h2 class="title center"><a id="Profile">Profile</a></h2>
+    <p class="p1 center">Current Student at Rochester Institute of Technology</p>
     <hr style="width: 40%;"> 
     <div class="row">
         <div class="column">
-            <h4 class="subtitle">About Me</h4>
+            <h3 class="subtitle center">About Me</h3>
             <p style="text-align: center;">Current student at Rochester Institute of Technology pursuing a Bachelor's degree in Computing Security with a minor in Networking.
                 I have experience in several programing langagues alongisde experince in both front-end and back-end development. 
             </p>
         </div>
 
         <div class="column">
-            <h5 class="subtitle">Details</h5>
+            <h3 class="subtitle center">Details</h3>
             <p style="text-align: center;">
             <strong>Name:</strong>
             <br>
@@ -211,21 +225,34 @@ p {
 
 <!-- Experience Section-->
 <div class="exp">
-    <h4 class="title"><a id="Experiences">Experiences</a></h4>
+    <h2 class="title center"><a id="Experiences">Experiences</a></h2>
+    <p class="p1 center">Current Student at Rochester Institute of Technology</p>
+
+    <hr style="width: 40%;"> 
+    <h3 class="subtitle">Education</h3>
+    <div class="row">
+        <div class="column">
+            <h4 class="exp-title">Rochester Institute of Technology</h4>
+        </div>
+        <div class="column">
+            <p class=""><Strong>Bachelor - Computing Security</Strong></p>
+
+        </div>
+    </div>
 </div>
 
 <!-- Skills Section-->
 <div class="skill">
-    <h5 class="title"><a id="Skills">Skills</a></h5>
+    <h2 class="title center"><a id="Skills">Skills</a></h2>
 </div>
 
 <!-- Projects Section -->
 <div class="project">
-    <h6 class="title"><a id="Projects">Projects</a></h6>
+    <h2 class="title center"><a id="Projects">Projects</a></h2>
 </div>
 
 <!-- Contact Section -->
-<footer class="contact">
+<footer class="contact center">
     <a href="https://www.linkedin.com/in/nicholas-perri/"><i class ="fa fa-linkedin-square" style="color: white;"></i></a>
     <a href="https://github.com/nk98"><i class="fa fa-github-square"  style="color: white;"></i></a>
     <a href="https://dayssincelastfacebookscandal.com/"><i class="fa fa-facebook-square"  style="color: white;"></i></a>
