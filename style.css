@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
 }
@@ -44,8 +43,7 @@ body, html {
     top: 40%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
-    
+    transform: translate(-50%, -50%)  
 }
 
 /* side navbar */ 
@@ -108,7 +106,7 @@ body, html {
     margin-bottom: 20px;
     color: rgb(59, 59, 59);
 }
-
+ 
 .exp-title {
     font-weight: 700;
     margin-bottom: 10px;
